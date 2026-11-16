@@ -5,9 +5,9 @@ Each case is measured in three separate steps:
 1. compile: the first Numba call, timed with Numba's ``numba:compile``
    events (see ``compile_time``), so the reported compile time excludes
    executing the freshly compiled kernel;
-2. warm-up: one untimed call, so the loop below times compiled code;
-3. benchmark loop: ``REPEATS`` timed batches of ``inner`` calls each,
-   keeping the fastest average.
+2. warm-up: one untimed call per arm, so the loop below times compiled code;
+3. benchmark loop: ``REPEATS`` interleaved timed batches of ``inner`` calls
+   per arm, keeping each arm's fastest average.
 """
 
 import math
@@ -40,22 +40,28 @@ def calibrate(fn, args):
     return max(1, min(TARGET_NS // single_ns, MAX_INNER))
 
 
-def measure(fn, args):
-    """Best average ``fn(*args)`` time in ns over ``REPEATS`` timed batches."""
-    fn(*args)
+def _batch(fn, args, inner):
+    """Average ns per ``fn(*args)`` call over one timed batch of ``inner`` calls."""
+    started = time.perf_counter_ns()
+    for _ in range(inner):
+        fn(*args)
+    return (time.perf_counter_ns() - started) / inner
 
-    inner = calibrate(fn, args)
-    best_ns = math.inf
 
-    # --- benchmark loop: REPEATS batches of `inner` calls -----------------
+def measure_pair(a_fn, b_fn, args):
+    """Interleaved A/B benchmark; returns (a_ns, b_ns) best batch averages."""
+    a_fn(*args)
+    b_fn(*args)  # warm-up calls; the numba kernel is already compiled
+
+    a_inner = calibrate(a_fn, args)
+    b_inner = calibrate(b_fn, args)
+    a_best = b_best = math.inf
+
     for _ in range(REPEATS):
-        started = time.perf_counter_ns()
-        for _ in range(inner):
-            fn(*args)
-        best_ns = min(best_ns, (time.perf_counter_ns() - started) / inner)
-    # ----------------------------------------------------------------------
+        a_best = min(a_best, _batch(a_fn, args, a_inner))
+        b_best = min(b_best, _batch(b_fn, args, b_inner))
 
-    return int(best_ns)
+    return int(a_best), int(b_best)
 
 
 def collect_sysinfo():
@@ -89,13 +95,11 @@ def run_benchmarks():
             case, np.random.RandomState(seed_for(case.id))
         )
 
-        # The NumPy reference needs no compilation.
-        numpy_ns = measure(numpy_fn, args)
-
         # The first Numba call compiles the kernel, timed through Numba's
-        # events; measure() then warms it up before the benchmark loop.
+        # events. It must precede measure_pair, whose warm-up call assumes
+        # a compiled kernel.
         compile_ns, compile_count = measure_compile(numba_fn, args)
-        numba_ns = measure(numba_fn, args)
+        numpy_ns, numba_ns = measure_pair(numpy_fn, numba_fn, args)
 
         rows.append(
             {
