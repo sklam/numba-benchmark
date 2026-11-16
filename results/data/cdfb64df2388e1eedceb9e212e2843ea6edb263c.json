@@ -1,6 +1,6 @@
 {
   "commit": "cdfb64df2388e1eedceb9e212e2843ea6edb263c",
-  "date": "2026-11-14T11:34:12Z",
+  "date": "2026-11-16T20:37:20Z",
   "measurements": {
     "linux-arm|3.13|2.2": {
       "os": "linux-arm",
@@ -9,8 +9,8 @@
       "numba": "0.69.0dev1+84.gcdfb64df2",
       "llvmlite": "0.51.0dev2",
       "sysinfo": {
-        "Start": "2026-11-14T11:33:52.311416",
-        "Start UTC": "2026-11-14T11:33:52.311435",
+        "Start": "2026-11-16T20:36:33.861571",
+        "Start UTC": "2026-11-16T20:36:33.861592",
         "Machine": "aarch64",
         "CPU Name": "neoverse-n2",
         "CPU Count": 4,
@@ -76,7 +76,7 @@
           "scipy    1.18.1"
         ],
         "Mem Total": 16715927552,
-        "Mem Available": 15332700160,
+        "Mem Available": 15340621824,
         "CPUs Allowed": 4,
         "List CPUs Allowed": "0-3",
         "Libc Version": "glibc 2.39",
@@ -88,78 +88,78 @@
           "Warning (no file): /sys/fs/cgroup/cpuacct/cpu.cfs_quota_us",
           "Warning (no file): /sys/fs/cgroup/cpuacct/cpu.cfs_period_us"
         ],
-        "Runtime": 0.19436
+        "Runtime": 0.217462
       },
-      "timestamp": "2026-11-14T11:33:52Z",
+      "timestamp": "2026-11-16T20:36:34Z",
       "cases": [
         {
           "id": "sum/float64/F",
           "order": 10,
-          "numpy_ns": 199439,
-          "numba_ns": 591658,
-          "compile_ns": 756013608,
+          "numpy_ns": 202940,
+          "numba_ns": 597091,
+          "compile_ns": 550089834,
           "compile_count": 1,
-          "speedup": 0.337
+          "speedup": 0.34
         },
         {
           "id": "sum/float32/F",
           "order": 20,
-          "numpy_ns": 190969,
-          "numba_ns": 517624,
-          "compile_ns": 102222568,
+          "numpy_ns": 188558,
+          "numba_ns": 517892,
+          "compile_ns": 112071748,
           "compile_count": 1,
-          "speedup": 0.369
+          "speedup": 0.364
         },
         {
           "id": "sum/float32/C",
           "order": 30,
-          "numpy_ns": 187479,
-          "numba_ns": 518142,
-          "compile_ns": 90790124,
+          "numpy_ns": 189671,
+          "numba_ns": 518920,
+          "compile_ns": 100564716,
           "compile_count": 1,
-          "speedup": 0.362
+          "speedup": 0.366
         },
         {
           "id": "sum/float64/A",
           "order": 40,
-          "numpy_ns": 157384,
-          "numba_ns": 831422,
-          "compile_ns": 113856449,
+          "numpy_ns": 159114,
+          "numba_ns": 823712,
+          "compile_ns": 132841694,
           "compile_count": 1,
-          "speedup": 0.189
+          "speedup": 0.193
         },
         {
           "id": "sum/float64/3d/C",
           "order": 50,
-          "numpy_ns": 55576,
-          "numba_ns": 155602,
-          "compile_ns": 116168834,
+          "numpy_ns": 55900,
+          "numba_ns": 156074,
+          "compile_ns": 125397099,
           "compile_count": 1,
-          "speedup": 0.357
+          "speedup": 0.358
         },
         {
           "id": "sum/uint8/C",
           "order": 60,
-          "numpy_ns": 582314,
-          "numba_ns": 38629,
-          "compile_ns": 93129949,
+          "numpy_ns": 583414,
+          "numba_ns": 38892,
+          "compile_ns": 102190724,
           "compile_count": 1,
-          "speedup": 15.075
+          "speedup": 15.001
         },
         {
           "id": "sum/int64/axis0/C",
           "order": 70,
-          "numpy_ns": 236038,
-          "numba_ns": 387340,
-          "compile_ns": 1302003862,
+          "numpy_ns": 243262,
+          "numba_ns": 391221,
+          "compile_ns": 1428831856,
           "compile_count": 1,
-          "speedup": 0.609
+          "speedup": 0.622
         },
         {
           "id": "sum/int64/axis1/C",
           "order": 80,
-          "numpy_ns": 304723,
-          "numba_ns": 1750088,
+          "numpy_ns": 304962,
+          "numba_ns": 1751528,
           "compile_ns": 0,
           "compile_count": 0,
           "speedup": 0.174
@@ -167,17 +167,17 @@
         {
           "id": "sum/float64/axis0/F",
           "order": 90,
-          "numpy_ns": 220440,
-          "numba_ns": 2065937,
-          "compile_ns": 476946141,
+          "numpy_ns": 215133,
+          "numba_ns": 2068837,
+          "compile_ns": 507825596,
           "compile_count": 1,
-          "speedup": 0.107
+          "speedup": 0.104
         },
         {
           "id": "sum/float64/axis1/F",
           "order": 100,
-          "numpy_ns": 231084,
-          "numba_ns": 344934,
+          "numpy_ns": 231790,
+          "numba_ns": 345967,
           "compile_ns": 0,
           "compile_count": 0,
           "speedup": 0.67
@@ -185,182 +185,182 @@
         {
           "id": "sum/int64/axis/3d",
           "order": 110,
-          "numpy_ns": 92879,
-          "numba_ns": 103730,
-          "compile_ns": 499844101,
+          "numpy_ns": 92278,
+          "numba_ns": 103567,
+          "compile_ns": 525439708,
           "compile_count": 1,
-          "speedup": 0.895
+          "speedup": 0.891
         },
         {
           "id": "sum/axis_tuple/float64/C",
           "order": 120,
-          "numpy_ns": 93308,
-          "numba_ns": 419689,
-          "compile_ns": 716208595,
+          "numpy_ns": 92906,
+          "numba_ns": 419996,
+          "compile_ns": 774163643,
           "compile_count": 1,
-          "speedup": 0.222
+          "speedup": 0.221
         },
         {
           "id": "sum/pair/float64/C",
           "order": 130,
-          "numpy_ns": 393985,
-          "numba_ns": 1184475,
-          "compile_ns": 101176848,
+          "numpy_ns": 396207,
+          "numba_ns": 1197133,
+          "compile_ns": 108439852,
           "compile_count": 1,
-          "speedup": 0.333
+          "speedup": 0.331
         },
         {
           "id": "cumsum/float64/F",
           "order": 140,
-          "numpy_ns": 2766832,
-          "numba_ns": 1021277,
-          "compile_ns": 209830791,
+          "numpy_ns": 2970712,
+          "numba_ns": 1084599,
+          "compile_ns": 220798126,
           "compile_count": 1,
-          "speedup": 2.709
+          "speedup": 2.739
         },
         {
           "id": "cumsum/float64/axis0/F",
           "order": 150,
-          "numpy_ns": 2093128,
-          "numba_ns": 1027906,
-          "compile_ns": 347035133,
+          "numpy_ns": 2093642,
+          "numba_ns": 1020094,
+          "compile_ns": 368714950,
           "compile_count": 1,
-          "speedup": 2.036
+          "speedup": 2.052
         },
         {
           "id": "cumsum/float64/axis0/C",
           "order": 160,
-          "numpy_ns": 2701029,
-          "numba_ns": 730117,
-          "compile_ns": 351309013,
+          "numpy_ns": 2741714,
+          "numba_ns": 786967,
+          "compile_ns": 379939401,
           "compile_count": 1,
-          "speedup": 3.699
+          "speedup": 3.484
         },
         {
           "id": "cumsum/float64/axis1/C",
           "order": 170,
-          "numpy_ns": 2093378,
-          "numba_ns": 2199391,
+          "numpy_ns": 2131465,
+          "numba_ns": 2268678,
           "compile_ns": 0,
           "compile_count": 0,
-          "speedup": 0.952
+          "speedup": 0.94
         },
         {
           "id": "cumsum/int64/axis1/3d",
           "order": 180,
-          "numpy_ns": 453921,
-          "numba_ns": 183056,
-          "compile_ns": 366475997,
+          "numpy_ns": 454451,
+          "numba_ns": 192644,
+          "compile_ns": 382933761,
           "compile_count": 1,
-          "speedup": 2.48
+          "speedup": 2.359
         },
         {
           "id": "sum/float64/C",
           "order": 190,
-          "numpy_ns": 198444,
-          "numba_ns": 593389,
-          "compile_ns": 44125876,
+          "numpy_ns": 199921,
+          "numba_ns": 594462,
+          "compile_ns": 49892058,
           "compile_count": 1,
-          "speedup": 0.334
+          "speedup": 0.336
         },
         {
           "id": "sum/float32/strided",
           "order": 200,
-          "numpy_ns": 112474,
-          "numba_ns": 296578,
-          "compile_ns": 85806189,
+          "numpy_ns": 120424,
+          "numba_ns": 296315,
+          "compile_ns": 90919819,
           "compile_count": 1,
-          "speedup": 0.379
+          "speedup": 0.406
         },
         {
           "id": "sum/int64/C",
           "order": 210,
-          "numpy_ns": 304838,
-          "numba_ns": 162420,
-          "compile_ns": 95246170,
+          "numpy_ns": 307061,
+          "numba_ns": 162600,
+          "compile_ns": 101312500,
           "compile_count": 1,
-          "speedup": 1.877
+          "speedup": 1.888
         },
         {
           "id": "sum/complex128/C",
           "order": 220,
-          "numpy_ns": 359693,
-          "numba_ns": 593294,
-          "compile_ns": 94951253,
+          "numpy_ns": 367160,
+          "numba_ns": 607120,
+          "compile_ns": 105229834,
           "compile_count": 1,
-          "speedup": 0.606
+          "speedup": 0.605
         },
         {
           "id": "mean/float64/F",
           "order": 230,
-          "numpy_ns": 201713,
-          "numba_ns": 592329,
-          "compile_ns": 119832376,
+          "numpy_ns": 202076,
+          "numba_ns": 592492,
+          "compile_ns": 129142973,
           "compile_count": 1,
           "speedup": 0.341
         },
         {
           "id": "mean/float32/negative",
           "order": 240,
-          "numpy_ns": 191483,
-          "numba_ns": 590959,
-          "compile_ns": 125538790,
+          "numpy_ns": 196225,
+          "numba_ns": 592020,
+          "compile_ns": 135569755,
           "compile_count": 1,
-          "speedup": 0.324
+          "speedup": 0.331
         },
         {
           "id": "add/float64/C",
           "order": 250,
-          "numpy_ns": 377921,
-          "numba_ns": 380272,
-          "compile_ns": 90948617,
+          "numpy_ns": 390274,
+          "numba_ns": 392730,
+          "compile_ns": 96633412,
           "compile_count": 1,
           "speedup": 0.994
         },
         {
           "id": "dot/float64/C",
           "order": 260,
-          "numpy_ns": 391252,
-          "numba_ns": 397443,
-          "compile_ns": 387554038,
+          "numpy_ns": 412788,
+          "numba_ns": 401028,
+          "compile_ns": 426983425,
           "compile_count": 1,
-          "speedup": 0.984
+          "speedup": 1.029
         },
         {
           "id": "sort/float64/C",
           "order": 270,
-          "numpy_ns": 4586640,
-          "numba_ns": 12298722,
-          "compile_ns": 860047833,
+          "numpy_ns": 4595095,
+          "numba_ns": 12335039,
+          "compile_ns": 906713085,
           "compile_count": 1,
           "speedup": 0.373
         },
         {
           "id": "cumsum/float64/C",
           "order": 280,
-          "numpy_ns": 2108894,
-          "numba_ns": 608045,
-          "compile_ns": 116471667,
+          "numpy_ns": 2109118,
+          "numba_ns": 640556,
+          "compile_ns": 133360848,
           "compile_count": 1,
-          "speedup": 3.468
+          "speedup": 3.293
         },
         {
           "id": "where/float64/C",
           "order": 290,
-          "numpy_ns": 638392,
-          "numba_ns": 903839,
-          "compile_ns": 752932133,
+          "numpy_ns": 664898,
+          "numba_ns": 954043,
+          "compile_ns": 825542908,
           "compile_count": 1,
-          "speedup": 0.706
+          "speedup": 0.697
         },
         {
           "id": "searchsorted/float64/C",
           "order": 300,
-          "numpy_ns": 34907615,
-          "numba_ns": 35074178,
-          "compile_ns": 358420120,
+          "numpy_ns": 36830653,
+          "numba_ns": 35841028,
+          "compile_ns": 409622503,
           "compile_count": 1,
-          "speedup": 0.995
+          "speedup": 1.028
         }
       ],
       "skipped": []
@@ -372,8 +372,8 @@
       "numba": "0.69.0dev1+84.gcdfb64df2",
       "llvmlite": "0.51.0dev2",
       "sysinfo": {
-        "Start": "2026-11-14T11:33:53.416420",
-        "Start UTC": "2026-11-14T11:33:53.416441",
+        "Start": "2026-11-16T20:36:29.911359",
+        "Start UTC": "2026-11-16T20:36:29.911379",
         "Machine": "aarch64",
         "CPU Name": "neoverse-n2",
         "CPU Count": 4,
@@ -438,8 +438,8 @@
           "pip      26.3",
           "scipy    1.18.1"
         ],
-        "Mem Total": 16715927552,
-        "Mem Available": 15343382528,
+        "Mem Total": 16715923456,
+        "Mem Available": 15319126016,
         "CPUs Allowed": 4,
         "List CPUs Allowed": "0-3",
         "Libc Version": "glibc 2.39",
@@ -451,279 +451,279 @@
           "Warning (no file): /sys/fs/cgroup/cpuacct/cpu.cfs_quota_us",
           "Warning (no file): /sys/fs/cgroup/cpuacct/cpu.cfs_period_us"
         ],
-        "Runtime": 0.172815
+        "Runtime": 0.167883
       },
-      "timestamp": "2026-11-14T11:33:53Z",
+      "timestamp": "2026-11-16T20:36:30Z",
       "cases": [
         {
           "id": "sum/float64/F",
           "order": 10,
-          "numpy_ns": 205607,
-          "numba_ns": 593250,
-          "compile_ns": 512672517,
+          "numpy_ns": 200692,
+          "numba_ns": 592145,
+          "compile_ns": 451263672,
           "compile_count": 1,
-          "speedup": 0.347
+          "speedup": 0.339
         },
         {
           "id": "sum/float32/F",
           "order": 20,
-          "numpy_ns": 188584,
-          "numba_ns": 517126,
-          "compile_ns": 133244145,
+          "numpy_ns": 190342,
+          "numba_ns": 517770,
+          "compile_ns": 129346284,
           "compile_count": 1,
-          "speedup": 0.365
+          "speedup": 0.368
         },
         {
           "id": "sum/float32/C",
           "order": 30,
-          "numpy_ns": 187122,
-          "numba_ns": 517452,
-          "compile_ns": 131356348,
+          "numpy_ns": 189865,
+          "numba_ns": 517729,
+          "compile_ns": 132825903,
           "compile_count": 1,
-          "speedup": 0.362
+          "speedup": 0.367
         },
         {
           "id": "sum/float64/A",
           "order": 40,
-          "numpy_ns": 160347,
-          "numba_ns": 828354,
-          "compile_ns": 135838068,
+          "numpy_ns": 157775,
+          "numba_ns": 867128,
+          "compile_ns": 138142047,
           "compile_count": 1,
-          "speedup": 0.194
+          "speedup": 0.182
         },
         {
           "id": "sum/float64/3d/C",
           "order": 50,
-          "numpy_ns": 56032,
-          "numba_ns": 155773,
-          "compile_ns": 149358821,
+          "numpy_ns": 55584,
+          "numba_ns": 155625,
+          "compile_ns": 144559972,
           "compile_count": 1,
-          "speedup": 0.36
+          "speedup": 0.357
         },
         {
           "id": "sum/uint8/C",
           "order": 60,
-          "numpy_ns": 583916,
-          "numba_ns": 40243,
-          "compile_ns": 116746212,
+          "numpy_ns": 576145,
+          "numba_ns": 39048,
+          "compile_ns": 120767228,
           "compile_count": 1,
-          "speedup": 14.51
+          "speedup": 14.755
         },
         {
           "id": "sum/int64/axis0/C",
           "order": 70,
-          "numpy_ns": 236772,
-          "numba_ns": 386841,
-          "compile_ns": 1423489679,
+          "numpy_ns": 239849,
+          "numba_ns": 386728,
+          "compile_ns": 1433248523,
           "compile_count": 1,
-          "speedup": 0.612
+          "speedup": 0.62
         },
         {
           "id": "sum/int64/axis1/C",
           "order": 80,
-          "numpy_ns": 304693,
-          "numba_ns": 1745763,
+          "numpy_ns": 304574,
+          "numba_ns": 1757971,
           "compile_ns": 0,
           "compile_count": 0,
-          "speedup": 0.175
+          "speedup": 0.173
         },
         {
           "id": "sum/float64/axis0/F",
           "order": 90,
-          "numpy_ns": 213585,
-          "numba_ns": 2068190,
-          "compile_ns": 579783786,
+          "numpy_ns": 217412,
+          "numba_ns": 2070156,
+          "compile_ns": 572359546,
           "compile_count": 1,
-          "speedup": 0.103
+          "speedup": 0.105
         },
         {
           "id": "sum/float64/axis1/F",
           "order": 100,
-          "numpy_ns": 238147,
-          "numba_ns": 345180,
+          "numpy_ns": 237526,
+          "numba_ns": 345710,
           "compile_ns": 0,
           "compile_count": 0,
-          "speedup": 0.69
+          "speedup": 0.687
         },
         {
           "id": "sum/int64/axis/3d",
           "order": 110,
-          "numpy_ns": 94133,
-          "numba_ns": 104541,
-          "compile_ns": 574170666,
+          "numpy_ns": 94183,
+          "numba_ns": 103908,
+          "compile_ns": 568134479,
           "compile_count": 1,
-          "speedup": 0.9
+          "speedup": 0.906
         },
         {
           "id": "sum/axis_tuple/float64/C",
           "order": 120,
-          "numpy_ns": 93965,
-          "numba_ns": 419832,
-          "compile_ns": 835236897,
+          "numpy_ns": 93208,
+          "numba_ns": 420713,
+          "compile_ns": 807089552,
           "compile_count": 1,
-          "speedup": 0.224
+          "speedup": 0.222
         },
         {
           "id": "sum/pair/float64/C",
           "order": 130,
-          "numpy_ns": 395718,
-          "numba_ns": 1186450,
-          "compile_ns": 127086636,
+          "numpy_ns": 399690,
+          "numba_ns": 1186702,
+          "compile_ns": 126630733,
           "compile_count": 1,
-          "speedup": 0.334
+          "speedup": 0.337
         },
         {
           "id": "cumsum/float64/F",
           "order": 140,
-          "numpy_ns": 2754387,
-          "numba_ns": 1003967,
-          "compile_ns": 250711002,
+          "numpy_ns": 2693694,
+          "numba_ns": 1048562,
+          "compile_ns": 242206318,
           "compile_count": 1,
-          "speedup": 2.744
+          "speedup": 2.569
         },
         {
           "id": "cumsum/float64/axis0/F",
           "order": 150,
-          "numpy_ns": 2096336,
-          "numba_ns": 1022395,
-          "compile_ns": 351832641,
+          "numpy_ns": 2097176,
+          "numba_ns": 1025956,
+          "compile_ns": 361147092,
           "compile_count": 1,
-          "speedup": 2.05
+          "speedup": 2.044
         },
         {
           "id": "cumsum/float64/axis0/C",
           "order": 160,
-          "numpy_ns": 2694059,
-          "numba_ns": 751396,
-          "compile_ns": 382014120,
+          "numpy_ns": 2696187,
+          "numba_ns": 760822,
+          "compile_ns": 395259818,
           "compile_count": 1,
-          "speedup": 3.585
+          "speedup": 3.544
         },
         {
           "id": "cumsum/float64/axis1/C",
           "order": 170,
-          "numpy_ns": 2097217,
-          "numba_ns": 2200020,
+          "numpy_ns": 2094797,
+          "numba_ns": 2221289,
           "compile_ns": 0,
           "compile_count": 0,
-          "speedup": 0.953
+          "speedup": 0.943
         },
         {
           "id": "cumsum/int64/axis1/3d",
           "order": 180,
-          "numpy_ns": 451488,
-          "numba_ns": 183782,
-          "compile_ns": 376511265,
+          "numpy_ns": 454364,
+          "numba_ns": 187550,
+          "compile_ns": 387444067,
           "compile_count": 1,
-          "speedup": 2.457
+          "speedup": 2.423
         },
         {
           "id": "sum/float64/C",
           "order": 190,
-          "numpy_ns": 203010,
-          "numba_ns": 593029,
-          "compile_ns": 47827395,
+          "numpy_ns": 200842,
+          "numba_ns": 593778,
+          "compile_ns": 48452660,
           "compile_count": 1,
-          "speedup": 0.342
+          "speedup": 0.338
         },
         {
           "id": "sum/float32/strided",
           "order": 200,
-          "numpy_ns": 121717,
-          "numba_ns": 297619,
-          "compile_ns": 114272835,
+          "numpy_ns": 123249,
+          "numba_ns": 296941,
+          "compile_ns": 110784443,
           "compile_count": 1,
-          "speedup": 0.409
+          "speedup": 0.415
         },
         {
           "id": "sum/int64/C",
           "order": 210,
-          "numpy_ns": 307856,
-          "numba_ns": 162889,
-          "compile_ns": 120690792,
+          "numpy_ns": 305192,
+          "numba_ns": 163584,
+          "compile_ns": 114487870,
           "compile_count": 1,
-          "speedup": 1.89
+          "speedup": 1.866
         },
         {
           "id": "sum/complex128/C",
           "order": 220,
-          "numpy_ns": 360015,
-          "numba_ns": 599749,
-          "compile_ns": 117414908,
+          "numpy_ns": 378186,
+          "numba_ns": 593470,
+          "compile_ns": 117139979,
           "compile_count": 1,
-          "speedup": 0.6
+          "speedup": 0.637
         },
         {
           "id": "mean/float64/F",
           "order": 230,
-          "numpy_ns": 198852,
-          "numba_ns": 591957,
-          "compile_ns": 133464117,
+          "numpy_ns": 202535,
+          "numba_ns": 593099,
+          "compile_ns": 139445598,
           "compile_count": 1,
-          "speedup": 0.336
+          "speedup": 0.341
         },
         {
           "id": "mean/float32/negative",
           "order": 240,
-          "numpy_ns": 191376,
-          "numba_ns": 590958,
-          "compile_ns": 134668700,
+          "numpy_ns": 191200,
+          "numba_ns": 591096,
+          "compile_ns": 139593199,
           "compile_count": 1,
-          "speedup": 0.324
+          "speedup": 0.323
         },
         {
           "id": "add/float64/C",
           "order": 250,
-          "numpy_ns": 378940,
-          "numba_ns": 388669,
-          "compile_ns": 96073092,
+          "numpy_ns": 390223,
+          "numba_ns": 398731,
+          "compile_ns": 96328771,
           "compile_count": 1,
-          "speedup": 0.975
+          "speedup": 0.979
         },
         {
           "id": "dot/float64/C",
           "order": 260,
-          "numpy_ns": 422876,
-          "numba_ns": 386909,
-          "compile_ns": 458466088,
+          "numpy_ns": 439881,
+          "numba_ns": 397084,
+          "compile_ns": 455242376,
           "compile_count": 1,
-          "speedup": 1.093
+          "speedup": 1.108
         },
         {
           "id": "sort/float64/C",
           "order": 270,
-          "numpy_ns": 4611850,
-          "numba_ns": 12353399,
-          "compile_ns": 1096074792,
+          "numpy_ns": 4595517,
+          "numba_ns": 12340012,
+          "compile_ns": 1071534786,
           "compile_count": 1,
-          "speedup": 0.373
+          "speedup": 0.372
         },
         {
           "id": "cumsum/float64/C",
           "order": 280,
-          "numpy_ns": 2115410,
-          "numba_ns": 638636,
-          "compile_ns": 67327369,
+          "numpy_ns": 2110736,
+          "numba_ns": 636510,
+          "compile_ns": 65667971,
           "compile_count": 1,
-          "speedup": 3.312
+          "speedup": 3.316
         },
         {
           "id": "where/float64/C",
           "order": 290,
-          "numpy_ns": 662412,
-          "numba_ns": 933304,
-          "compile_ns": 998992312,
+          "numpy_ns": 640780,
+          "numba_ns": 909298,
+          "compile_ns": 956786354,
           "compile_count": 1,
-          "speedup": 0.71
+          "speedup": 0.705
         },
         {
           "id": "searchsorted/float64/C",
           "order": 300,
-          "numpy_ns": 34812649,
-          "numba_ns": 34863566,
-          "compile_ns": 463164849,
+          "numpy_ns": 35719650,
+          "numba_ns": 35577898,
+          "compile_ns": 449809268,
           "compile_count": 1,
-          "speedup": 0.999
+          "speedup": 1.004
         }
       ],
       "skipped": []
@@ -735,15 +735,15 @@
       "numba": "0.69.0dev1+84.gcdfb64df2",
       "llvmlite": "0.51.0dev2",
       "sysinfo": {
-        "Start": "2026-11-14T11:33:42.956547",
-        "Start UTC": "2026-11-14T11:33:42.956566",
+        "Start": "2026-11-16T20:36:36.435583",
+        "Start UTC": "2026-11-16T20:36:36.435601",
         "Machine": "x86_64",
-        "CPU Name": "znver5",
+        "CPU Name": "graniterapids",
         "CPU Count": 4,
-        "Platform Name": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
-        "Platform Release": "7.0.0-1017-azure",
+        "Platform Name": "Linux-7.0.0-1014-aws-x86_64-with-glibc2.39",
+        "Platform Release": "7.0.0-1014-aws",
         "OS Name": "Linux",
-        "OS Version": "#17~24.04.1-Ubuntu SMP PREEMPT Thu Sep 24 18:46:57 UTC 2026",
+        "OS Version": "#14~24.04.1-Ubuntu SMP PREEMPT Fri Sep 18 21:24:59 UTC 2026",
         "Python Compiler": "GCC 13.3.0",
         "Python Implementation": "CPython",
         "Python Version": "3.12.16",
@@ -752,7 +752,7 @@
         "LLVM Version": "22.1.0",
         "llvmlite Version": "0.51.0dev2",
         "Psutil Available": false,
-        "CPU Features": "64bit adx aes avx avx2 avx512bf16 avx512bitalg avx512bw avx512cd avx512dq avx512f avx512ifma avx512vbmi avx512vbmi2 avx512vl avx512vnni avx512vp2intersect avx512vpopcntdq avxvnni bmi bmi2 clflushopt clwb clzero cmov crc32 cx16 cx8 f16c fma fsgsbase fxsr gfni invpcid lzcnt mmx movbe pclmul popcnt prfchw rdpid rdpru rdrnd rdseed sahf sha shstk sse sse2 sse3 sse4.1 sse4.2 sse4a ssse3 vaes vpclmulqdq xsave xsavec xsaveopt xsaves",
+        "CPU Features": "64bit adx aes amx-bf16 amx-fp16 amx-int8 amx-tile avx avx10.1 avx2 avx512bf16 avx512bitalg avx512bw avx512cd avx512dq avx512f avx512fp16 avx512ifma avx512vbmi avx512vbmi2 avx512vl avx512vnni avx512vpopcntdq avxvnni bmi bmi2 cldemote clflushopt clwb cmov crc32 cx16 cx8 f16c fma fsgsbase fxsr gfni invpcid lzcnt mmx movbe movdir64b movdiri pclmul pku popcnt prefetchi prfchw rdpid rdrnd rdseed sahf serialize sha sse sse2 sse3 sse4.1 sse4.2 ssse3 vaes vpclmulqdq waitpkg wbnoinvd xsave xsavec xsaveopt xsaves",
         "Python Locale": "C.UTF-8",
         "CUDA Target Impl": "Built-in",
         "CUDA Device Init": false,
@@ -781,10 +781,12 @@
           "AVX512VBMI",
           "AVX512VBMI2",
           "AVX512BITALG",
+          "AVX512FP16",
           "AVX512_SKX",
           "AVX512_CLX",
           "AVX512_CNL",
-          "AVX512_ICL"
+          "AVX512_ICL",
+          "AVX512_SPR"
         ],
         "NumPy Supported SIMD dispatch": [
           "SSSE3",
@@ -998,8 +1000,8 @@
           "zlib                                        1.3.2            h47b2149_0",
           "zstd                                        1.5.7            h11fc155_0"
         ],
-        "Mem Total": 16760340480,
-        "Mem Available": 15500406784,
+        "Mem Total": 16464302080,
+        "Mem Available": 15218376704,
         "CPUs Allowed": 4,
         "List CPUs Allowed": "0-3",
         "Libc Version": "glibc 2.39",
@@ -1010,279 +1012,279 @@
           "Warning (no file): /sys/fs/cgroup/cpuacct/cpu.cfs_quota_us",
           "Warning (no file): /sys/fs/cgroup/cpuacct/cpu.cfs_period_us"
         ],
-        "Runtime": 28.881214
+        "Runtime": 23.80471
       },
-      "timestamp": "2026-11-14T11:34:11Z",
+      "timestamp": "2026-11-16T20:37:00Z",
       "cases": [
         {
           "id": "sum/float64/F",
           "order": 10,
-          "numpy_ns": 134701,
-          "numba_ns": 454041,
-          "compile_ns": 469889502,
+          "numpy_ns": 280795,
+          "numba_ns": 529031,
+          "compile_ns": 502912984,
           "compile_count": 1,
-          "speedup": 0.297
+          "speedup": 0.531
         },
         {
           "id": "sum/float32/F",
           "order": 20,
-          "numpy_ns": 126002,
-          "numba_ns": 448681,
-          "compile_ns": 123742004,
+          "numpy_ns": 162378,
+          "numba_ns": 528407,
+          "compile_ns": 101521996,
           "compile_count": 1,
-          "speedup": 0.281
+          "speedup": 0.307
         },
         {
           "id": "sum/float32/C",
           "order": 30,
-          "numpy_ns": 125134,
-          "numba_ns": 448699,
-          "compile_ns": 94681981,
+          "numpy_ns": 160595,
+          "numba_ns": 527618,
+          "compile_ns": 107878075,
           "compile_count": 1,
-          "speedup": 0.279
+          "speedup": 0.304
         },
         {
           "id": "sum/float64/A",
           "order": 40,
-          "numpy_ns": 106151,
-          "numba_ns": 580612,
-          "compile_ns": 173325785,
+          "numpy_ns": 222751,
+          "numba_ns": 2340826,
+          "compile_ns": 108701399,
           "compile_count": 1,
-          "speedup": 0.183
+          "speedup": 0.095
         },
         {
           "id": "sum/float64/3d/C",
           "order": 50,
-          "numpy_ns": 38308,
-          "numba_ns": 120731,
-          "compile_ns": 149083684,
+          "numpy_ns": 61250,
+          "numba_ns": 138028,
+          "compile_ns": 111258378,
           "compile_count": 1,
-          "speedup": 0.317
+          "speedup": 0.444
         },
         {
           "id": "sum/uint8/C",
           "order": 60,
-          "numpy_ns": 209094,
-          "numba_ns": 19869,
-          "compile_ns": 101356726,
+          "numpy_ns": 257651,
+          "numba_ns": 65073,
+          "compile_ns": 87970963,
           "compile_count": 1,
-          "speedup": 10.524
+          "speedup": 3.959
         },
         {
           "id": "sum/int64/axis0/C",
           "order": 70,
-          "numpy_ns": 158767,
-          "numba_ns": 152652,
-          "compile_ns": 1145607402,
+          "numpy_ns": 277839,
+          "numba_ns": 323246,
+          "compile_ns": 1037184783,
           "compile_count": 1,
-          "speedup": 1.04
+          "speedup": 0.86
         },
         {
           "id": "sum/int64/axis1/C",
           "order": 80,
-          "numpy_ns": 126661,
-          "numba_ns": 238099,
+          "numpy_ns": 278246,
+          "numba_ns": 1649515,
           "compile_ns": 0,
           "compile_count": 0,
-          "speedup": 0.532
+          "speedup": 0.169
         },
         {
           "id": "sum/float64/axis0/F",
           "order": 90,
-          "numpy_ns": 154655,
-          "numba_ns": 2663498,
-          "compile_ns": 507484303,
+          "numpy_ns": 278084,
+          "numba_ns": 2022474,
+          "compile_ns": 436132101,
           "compile_count": 1,
-          "speedup": 0.058
+          "speedup": 0.137
         },
         {
           "id": "sum/float64/axis1/F",
           "order": 100,
-          "numpy_ns": 160139,
-          "numba_ns": 243223,
+          "numpy_ns": 279152,
+          "numba_ns": 313564,
           "compile_ns": 0,
           "compile_count": 0,
-          "speedup": 0.658
+          "speedup": 0.89
         },
         {
           "id": "sum/int64/axis/3d",
           "order": 110,
-          "numpy_ns": 80936,
-          "numba_ns": 44406,
-          "compile_ns": 463558321,
+          "numpy_ns": 115832,
+          "numba_ns": 85173,
+          "compile_ns": 414189049,
           "compile_count": 1,
-          "speedup": 1.823
+          "speedup": 1.36
         },
         {
           "id": "sum/axis_tuple/float64/C",
           "order": 120,
-          "numpy_ns": 85424,
-          "numba_ns": 343779,
-          "compile_ns": 629492710,
+          "numpy_ns": 104807,
+          "numba_ns": 263513,
+          "compile_ns": 579284397,
           "compile_count": 1,
-          "speedup": 0.248
+          "speedup": 0.398
         },
         {
           "id": "sum/pair/float64/C",
           "order": 130,
-          "numpy_ns": 330114,
-          "numba_ns": 931154,
-          "compile_ns": 116006249,
+          "numpy_ns": 567647,
+          "numba_ns": 1048956,
+          "compile_ns": 97655740,
           "compile_count": 1,
-          "speedup": 0.355
+          "speedup": 0.541
         },
         {
           "id": "cumsum/float64/F",
           "order": 140,
-          "numpy_ns": 3580696,
-          "numba_ns": 629100,
-          "compile_ns": 252388753,
+          "numpy_ns": 3034865,
+          "numba_ns": 1296876,
+          "compile_ns": 197933229,
           "compile_count": 1,
-          "speedup": 5.692
+          "speedup": 2.34
         },
         {
           "id": "cumsum/float64/axis0/F",
           "order": 150,
-          "numpy_ns": 2721739,
-          "numba_ns": 697352,
-          "compile_ns": 307237131,
+          "numpy_ns": 2245270,
+          "numba_ns": 1739862,
+          "compile_ns": 293681042,
           "compile_count": 1,
-          "speedup": 3.903
+          "speedup": 1.29
         },
         {
           "id": "cumsum/float64/axis0/C",
           "order": 160,
-          "numpy_ns": 3043248,
-          "numba_ns": 404111,
-          "compile_ns": 390061905,
+          "numpy_ns": 2488181,
+          "numba_ns": 965036,
+          "compile_ns": 317467401,
           "compile_count": 1,
-          "speedup": 7.531
+          "speedup": 2.578
         },
         {
           "id": "cumsum/float64/axis1/C",
           "order": 170,
-          "numpy_ns": 2721917,
-          "numba_ns": 2848610,
+          "numpy_ns": 2265764,
+          "numba_ns": 2341063,
           "compile_ns": 0,
           "compile_count": 0,
-          "speedup": 0.956
+          "speedup": 0.968
         },
         {
           "id": "cumsum/int64/axis1/3d",
           "order": 180,
-          "numpy_ns": 295909,
-          "numba_ns": 99952,
-          "compile_ns": 316578724,
+          "numpy_ns": 546700,
+          "numba_ns": 248290,
+          "compile_ns": 303322645,
           "compile_count": 1,
-          "speedup": 2.961
+          "speedup": 2.202
         },
         {
           "id": "sum/float64/C",
           "order": 190,
-          "numpy_ns": 133691,
-          "numba_ns": 454507,
-          "compile_ns": 37368282,
+          "numpy_ns": 293314,
+          "numba_ns": 525295,
+          "compile_ns": 40578393,
           "compile_count": 1,
-          "speedup": 0.294
+          "speedup": 0.558
         },
         {
           "id": "sum/float32/strided",
           "order": 200,
-          "numpy_ns": 64421,
-          "numba_ns": 233569,
-          "compile_ns": 100648861,
+          "numpy_ns": 140172,
+          "numba_ns": 262763,
+          "compile_ns": 88971009,
           "compile_count": 1,
-          "speedup": 0.276
+          "speedup": 0.533
         },
         {
           "id": "sum/int64/C",
           "order": 210,
-          "numpy_ns": 123701,
-          "numba_ns": 67913,
-          "compile_ns": 109139200,
+          "numpy_ns": 276088,
+          "numba_ns": 269437,
+          "compile_ns": 90762108,
           "compile_count": 1,
-          "speedup": 1.821
+          "speedup": 1.025
         },
         {
           "id": "sum/complex128/C",
           "order": 220,
-          "numpy_ns": 279422,
-          "numba_ns": 470970,
-          "compile_ns": 98452184,
+          "numpy_ns": 622149,
+          "numba_ns": 540919,
+          "compile_ns": 87480221,
           "compile_count": 1,
-          "speedup": 0.593
+          "speedup": 1.15
         },
         {
           "id": "mean/float64/F",
           "order": 230,
-          "numpy_ns": 137032,
-          "numba_ns": 469860,
-          "compile_ns": 116648359,
+          "numpy_ns": 282129,
+          "numba_ns": 524796,
+          "compile_ns": 106718075,
           "compile_count": 1,
-          "speedup": 0.292
+          "speedup": 0.538
         },
         {
           "id": "mean/float32/negative",
           "order": 240,
-          "numpy_ns": 131960,
-          "numba_ns": 469994,
-          "compile_ns": 114618053,
+          "numpy_ns": 167467,
+          "numba_ns": 524575,
+          "compile_ns": 109690999,
           "compile_count": 1,
-          "speedup": 0.281
+          "speedup": 0.319
         },
         {
           "id": "add/float64/C",
           "order": 250,
-          "numpy_ns": 224378,
-          "numba_ns": 205624,
-          "compile_ns": 80331063,
+          "numpy_ns": 861061,
+          "numba_ns": 811118,
+          "compile_ns": 79883490,
           "compile_count": 1,
-          "speedup": 1.091
+          "speedup": 1.062
         },
         {
           "id": "dot/float64/C",
           "order": 260,
-          "numpy_ns": 179928,
-          "numba_ns": 181318,
-          "compile_ns": 387573854,
+          "numpy_ns": 245186,
+          "numba_ns": 236613,
+          "compile_ns": 360586474,
           "compile_count": 1,
-          "speedup": 0.992
+          "speedup": 1.036
         },
         {
           "id": "sort/float64/C",
           "order": 270,
-          "numpy_ns": 718649,
-          "numba_ns": 13956730,
-          "compile_ns": 875699642,
+          "numpy_ns": 882593,
+          "numba_ns": 14485709,
+          "compile_ns": 777380202,
           "compile_count": 1,
-          "speedup": 0.051
+          "speedup": 0.061
         },
         {
           "id": "cumsum/float64/C",
           "order": 280,
-          "numpy_ns": 2863729,
-          "numba_ns": 482486,
-          "compile_ns": 55342713,
+          "numpy_ns": 2264436,
+          "numba_ns": 544538,
+          "compile_ns": 55874007,
           "compile_count": 1,
-          "speedup": 5.935
+          "speedup": 4.158
         },
         {
           "id": "where/float64/C",
           "order": 290,
-          "numpy_ns": 3805952,
-          "numba_ns": 597663,
-          "compile_ns": 885365669,
+          "numpy_ns": 3799947,
+          "numba_ns": 4022936,
+          "compile_ns": 716854272,
           "compile_count": 1,
-          "speedup": 6.368
+          "speedup": 0.945
         },
         {
           "id": "searchsorted/float64/C",
           "order": 300,
-          "numpy_ns": 27840715,
-          "numba_ns": 27260432,
-          "compile_ns": 438829365,
+          "numpy_ns": 28501494,
+          "numba_ns": 27581958,
+          "compile_ns": 314304130,
           "compile_count": 1,
-          "speedup": 1.021
+          "speedup": 1.033
         }
       ],
       "skipped": []
@@ -1294,15 +1296,15 @@
       "numba": "0.69.0dev1+84.gcdfb64df2",
       "llvmlite": "0.51.0dev2",
       "sysinfo": {
-        "Start": "2026-11-14T11:33:45.345764",
-        "Start UTC": "2026-11-14T11:33:45.345784",
+        "Start": "2026-11-16T20:36:51.239008",
+        "Start UTC": "2026-11-16T20:36:51.239028",
         "Machine": "x86_64",
-        "CPU Name": "znver5",
+        "CPU Name": "graniterapids",
         "CPU Count": 4,
-        "Platform Name": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
-        "Platform Release": "7.0.0-1017-azure",
+        "Platform Name": "Linux-7.0.0-1014-aws-x86_64-with-glibc2.39",
+        "Platform Release": "7.0.0-1014-aws",
         "OS Name": "Linux",
-        "OS Version": "#17~24.04.1-Ubuntu SMP PREEMPT Thu Sep 24 18:46:57 UTC 2026",
+        "OS Version": "#14~24.04.1-Ubuntu SMP PREEMPT Fri Sep 18 21:24:59 UTC 2026",
         "Python Compiler": "GCC 13.3.0",
         "Python Implementation": "CPython",
         "Python Version": "3.13.18",
@@ -1311,7 +1313,7 @@
         "LLVM Version": "22.1.0",
         "llvmlite Version": "0.51.0dev2",
         "Psutil Available": false,
-        "CPU Features": "64bit adx aes avx avx2 avx512bf16 avx512bitalg avx512bw avx512cd avx512dq avx512f avx512ifma avx512vbmi avx512vbmi2 avx512vl avx512vnni avx512vp2intersect avx512vpopcntdq avxvnni bmi bmi2 clflushopt clwb clzero cmov crc32 cx16 cx8 f16c fma fsgsbase fxsr gfni invpcid lzcnt mmx movbe pclmul popcnt prfchw rdpid rdpru rdrnd rdseed sahf sha shstk sse sse2 sse3 sse4.1 sse4.2 sse4a ssse3 vaes vpclmulqdq xsave xsavec xsaveopt xsaves",
+        "CPU Features": "64bit adx aes amx-bf16 amx-fp16 amx-int8 amx-tile avx avx10.1 avx2 avx512bf16 avx512bitalg avx512bw avx512cd avx512dq avx512f avx512fp16 avx512ifma avx512vbmi avx512vbmi2 avx512vl avx512vnni avx512vpopcntdq avxvnni bmi bmi2 cldemote clflushopt clwb cmov crc32 cx16 cx8 f16c fma fsgsbase fxsr gfni invpcid lzcnt mmx movbe movdir64b movdiri pclmul pku popcnt prefetchi prfchw rdpid rdrnd rdseed sahf serialize sha sse sse2 sse3 sse4.1 sse4.2 ssse3 vaes vpclmulqdq waitpkg wbnoinvd xsave xsavec xsaveopt xsaves",
         "Python Locale": "C.UTF-8",
         "CUDA Target Impl": "Built-in",
         "CUDA Device Init": false,
@@ -1340,10 +1342,12 @@
           "AVX512VBMI",
           "AVX512VBMI2",
           "AVX512BITALG",
+          "AVX512FP16",
           "AVX512_SKX",
           "AVX512_CLX",
           "AVX512_CNL",
-          "AVX512_ICL"
+          "AVX512_ICL",
+          "AVX512_SPR"
         ],
         "NumPy Supported SIMD dispatch": [
           "SSSE3",
@@ -1557,8 +1561,8 @@
           "zlib                                        1.3.2            h47b2149_0",
           "zstd                                        1.5.7            h11fc155_0"
         ],
-        "Mem Total": 16760344576,
-        "Mem Available": 15500980224,
+        "Mem Total": 16464302080,
+        "Mem Available": 15300706304,
         "CPUs Allowed": 4,
         "List CPUs Allowed": "0-3",
         "Libc Version": "glibc 2.39",
@@ -1569,279 +1573,279 @@
           "Warning (no file): /sys/fs/cgroup/cpuacct/cpu.cfs_quota_us",
           "Warning (no file): /sys/fs/cgroup/cpuacct/cpu.cfs_period_us"
         ],
-        "Runtime": 26.658522
+        "Runtime": 29.594445
       },
-      "timestamp": "2026-11-14T11:34:12Z",
+      "timestamp": "2026-11-16T20:37:20Z",
       "cases": [
         {
           "id": "sum/float64/F",
           "order": 10,
-          "numpy_ns": 133348,
-          "numba_ns": 468074,
-          "compile_ns": 473228558,
+          "numpy_ns": 339715,
+          "numba_ns": 532477,
+          "compile_ns": 708581683,
           "compile_count": 1,
-          "speedup": 0.285
+          "speedup": 0.638
         },
         {
           "id": "sum/float32/F",
           "order": 20,
-          "numpy_ns": 131781,
-          "numba_ns": 465757,
-          "compile_ns": 107979561,
+          "numpy_ns": 184168,
+          "numba_ns": 530841,
+          "compile_ns": 94214404,
           "compile_count": 1,
-          "speedup": 0.283
+          "speedup": 0.347
         },
         {
           "id": "sum/float32/C",
           "order": 30,
-          "numpy_ns": 129814,
-          "numba_ns": 467816,
-          "compile_ns": 79521413,
+          "numpy_ns": 186576,
+          "numba_ns": 528060,
+          "compile_ns": 79528773,
           "compile_count": 1,
-          "speedup": 0.277
+          "speedup": 0.353
         },
         {
           "id": "sum/float64/A",
           "order": 40,
-          "numpy_ns": 110546,
-          "numba_ns": 571391,
-          "compile_ns": 120503374,
+          "numpy_ns": 269692,
+          "numba_ns": 2751081,
+          "compile_ns": 102965740,
           "compile_count": 1,
-          "speedup": 0.193
+          "speedup": 0.098
         },
         {
           "id": "sum/float64/3d/C",
           "order": 50,
-          "numpy_ns": 37673,
-          "numba_ns": 123056,
-          "compile_ns": 118476224,
+          "numpy_ns": 70677,
+          "numba_ns": 138975,
+          "compile_ns": 101954171,
           "compile_count": 1,
-          "speedup": 0.306
+          "speedup": 0.509
         },
         {
           "id": "sum/uint8/C",
           "order": 60,
-          "numpy_ns": 225468,
-          "numba_ns": 20594,
-          "compile_ns": 81259799,
+          "numpy_ns": 257014,
+          "numba_ns": 65052,
+          "compile_ns": 81657060,
           "compile_count": 1,
-          "speedup": 10.948
+          "speedup": 3.951
         },
         {
           "id": "sum/int64/axis0/C",
           "order": 70,
-          "numpy_ns": 159276,
-          "numba_ns": 154580,
-          "compile_ns": 1093456129,
+          "numpy_ns": 345634,
+          "numba_ns": 365957,
+          "compile_ns": 1061326815,
           "compile_count": 1,
-          "speedup": 1.03
+          "speedup": 0.944
         },
         {
           "id": "sum/int64/axis1/C",
           "order": 80,
-          "numpy_ns": 131974,
-          "numba_ns": 237873,
+          "numpy_ns": 332547,
+          "numba_ns": 1665086,
           "compile_ns": 0,
           "compile_count": 0,
-          "speedup": 0.555
+          "speedup": 0.2
         },
         {
           "id": "sum/float64/axis0/F",
           "order": 90,
-          "numpy_ns": 156117,
-          "numba_ns": 2728504,
-          "compile_ns": 400846314,
+          "numpy_ns": 343445,
+          "numba_ns": 2030041,
+          "compile_ns": 399208801,
           "compile_count": 1,
-          "speedup": 0.057
+          "speedup": 0.169
         },
         {
           "id": "sum/float64/axis1/F",
           "order": 100,
-          "numpy_ns": 160701,
-          "numba_ns": 241911,
+          "numpy_ns": 347861,
+          "numba_ns": 354993,
           "compile_ns": 0,
           "compile_count": 0,
-          "speedup": 0.664
+          "speedup": 0.98
         },
         {
           "id": "sum/int64/axis/3d",
           "order": 110,
-          "numpy_ns": 80521,
-          "numba_ns": 45005,
-          "compile_ns": 404686261,
+          "numpy_ns": 115715,
+          "numba_ns": 89810,
+          "compile_ns": 403490297,
           "compile_count": 1,
-          "speedup": 1.789
+          "speedup": 1.288
         },
         {
           "id": "sum/axis_tuple/float64/C",
           "order": 120,
-          "numpy_ns": 84906,
-          "numba_ns": 362450,
-          "compile_ns": 592194446,
+          "numpy_ns": 109479,
+          "numba_ns": 265295,
+          "compile_ns": 578419550,
           "compile_count": 1,
-          "speedup": 0.234
+          "speedup": 0.413
         },
         {
           "id": "sum/pair/float64/C",
           "order": 130,
-          "numpy_ns": 281036,
-          "numba_ns": 945437,
-          "compile_ns": 86658633,
+          "numpy_ns": 664112,
+          "numba_ns": 1059348,
+          "compile_ns": 88881484,
           "compile_count": 1,
-          "speedup": 0.297
+          "speedup": 0.627
         },
         {
           "id": "cumsum/float64/F",
           "order": 140,
-          "numpy_ns": 3666215,
-          "numba_ns": 620922,
-          "compile_ns": 217257986,
+          "numpy_ns": 3070514,
+          "numba_ns": 1346981,
+          "compile_ns": 189236800,
           "compile_count": 1,
-          "speedup": 5.904
+          "speedup": 2.28
         },
         {
           "id": "cumsum/float64/axis0/F",
           "order": 150,
-          "numpy_ns": 2822282,
-          "numba_ns": 685086,
-          "compile_ns": 303751040,
+          "numpy_ns": 2265872,
+          "numba_ns": 1786079,
+          "compile_ns": 295479757,
           "compile_count": 1,
-          "speedup": 4.12
+          "speedup": 1.269
         },
         {
           "id": "cumsum/float64/axis0/C",
           "order": 160,
-          "numpy_ns": 2997217,
-          "numba_ns": 405958,
-          "compile_ns": 311326234,
+          "numpy_ns": 2545203,
+          "numba_ns": 982494,
+          "compile_ns": 291583478,
           "compile_count": 1,
-          "speedup": 7.383
+          "speedup": 2.591
         },
         {
           "id": "cumsum/float64/axis1/C",
           "order": 170,
-          "numpy_ns": 2845787,
-          "numba_ns": 2858616,
+          "numpy_ns": 2286729,
+          "numba_ns": 2359781,
           "compile_ns": 0,
           "compile_count": 0,
-          "speedup": 0.996
+          "speedup": 0.969
         },
         {
           "id": "cumsum/int64/axis1/3d",
           "order": 180,
-          "numpy_ns": 284973,
-          "numba_ns": 98218,
-          "compile_ns": 306735639,
+          "numpy_ns": 618375,
+          "numba_ns": 259426,
+          "compile_ns": 303690748,
           "compile_count": 1,
-          "speedup": 2.901
+          "speedup": 2.384
         },
         {
           "id": "sum/float64/C",
           "order": 190,
-          "numpy_ns": 139205,
-          "numba_ns": 472294,
-          "compile_ns": 37264362,
+          "numpy_ns": 329373,
+          "numba_ns": 530523,
+          "compile_ns": 39746645,
           "compile_count": 1,
-          "speedup": 0.295
+          "speedup": 0.621
         },
         {
           "id": "sum/float32/strided",
           "order": 200,
-          "numpy_ns": 66851,
-          "numba_ns": 236516,
-          "compile_ns": 76771238,
+          "numpy_ns": 159753,
+          "numba_ns": 265002,
+          "compile_ns": 78207694,
           "compile_count": 1,
-          "speedup": 0.283
+          "speedup": 0.603
         },
         {
           "id": "sum/int64/C",
           "order": 210,
-          "numpy_ns": 123484,
-          "numba_ns": 70906,
-          "compile_ns": 85849628,
+          "numpy_ns": 321808,
+          "numba_ns": 271931,
+          "compile_ns": 85180922,
           "compile_count": 1,
-          "speedup": 1.742
+          "speedup": 1.183
         },
         {
           "id": "sum/complex128/C",
           "order": 220,
-          "numpy_ns": 283413,
-          "numba_ns": 473860,
-          "compile_ns": 76830798,
+          "numpy_ns": 635083,
+          "numba_ns": 709196,
+          "compile_ns": 79616923,
           "compile_count": 1,
-          "speedup": 0.598
+          "speedup": 0.895
         },
         {
           "id": "mean/float64/F",
           "order": 230,
-          "numpy_ns": 138853,
-          "numba_ns": 471210,
-          "compile_ns": 101650671,
+          "numpy_ns": 327454,
+          "numba_ns": 530433,
+          "compile_ns": 101251773,
           "compile_count": 1,
-          "speedup": 0.295
+          "speedup": 0.617
         },
         {
           "id": "mean/float32/negative",
           "order": 240,
-          "numpy_ns": 132861,
-          "numba_ns": 475475,
-          "compile_ns": 103457349,
+          "numpy_ns": 190098,
+          "numba_ns": 528411,
+          "compile_ns": 104438895,
           "compile_count": 1,
-          "speedup": 0.279
+          "speedup": 0.36
         },
         {
           "id": "add/float64/C",
           "order": 250,
-          "numpy_ns": 235324,
-          "numba_ns": 213556,
-          "compile_ns": 78017520,
+          "numpy_ns": 874016,
+          "numba_ns": 819273,
+          "compile_ns": 79102268,
           "compile_count": 1,
-          "speedup": 1.102
+          "speedup": 1.067
         },
         {
           "id": "dot/float64/C",
           "order": 260,
-          "numpy_ns": 192099,
-          "numba_ns": 184556,
-          "compile_ns": 336664171,
+          "numpy_ns": 251162,
+          "numba_ns": 239175,
+          "compile_ns": 318944135,
           "compile_count": 1,
-          "speedup": 1.041
+          "speedup": 1.05
         },
         {
           "id": "sort/float64/C",
           "order": 270,
-          "numpy_ns": 737132,
-          "numba_ns": 14086323,
-          "compile_ns": 691062805,
+          "numpy_ns": 895883,
+          "numba_ns": 14464801,
+          "compile_ns": 698293060,
           "compile_count": 1,
-          "speedup": 0.052
+          "speedup": 0.062
         },
         {
           "id": "cumsum/float64/C",
           "order": 280,
-          "numpy_ns": 2830705,
-          "numba_ns": 475950,
-          "compile_ns": 142197869,
+          "numpy_ns": 2274436,
+          "numba_ns": 653443,
+          "compile_ns": 112042950,
           "compile_count": 1,
-          "speedup": 5.947
+          "speedup": 3.481
         },
         {
           "id": "where/float64/C",
           "order": 290,
-          "numpy_ns": 3618666,
-          "numba_ns": 612298,
-          "compile_ns": 635194312,
+          "numpy_ns": 3751382,
+          "numba_ns": 4048628,
+          "compile_ns": 623319757,
           "compile_count": 1,
-          "speedup": 5.91
+          "speedup": 0.927
         },
         {
           "id": "searchsorted/float64/C",
           "order": 300,
-          "numpy_ns": 27779936,
-          "numba_ns": 27431273,
-          "compile_ns": 304469298,
+          "numpy_ns": 26280423,
+          "numba_ns": 25286106,
+          "compile_ns": 297932237,
           "compile_count": 1,
-          "speedup": 1.013
+          "speedup": 1.039
         }
       ],
       "skipped": []
