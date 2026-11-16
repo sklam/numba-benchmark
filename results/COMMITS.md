@@ -10,6 +10,8 @@ python scripts/results_readme.py
 
 | Commit | Message | Results |
 |---|---|---|
+| [`5d38777ec2ffdd48b50accdc2d4b92df6a0da099`](https://github.com/numba/numba/commit/5d38777ec2ffdd48b50accdc2d4b92df6a0da099) | Merge pull request #10809 from swap357/gha/llvmlite_pip_install_pre | [5d38777ec2ff.json](./data/5d38777ec2ffdd48b50accdc2d4b92df6a0da099.json) |
+| [`c708d5ae1fe0ee1124690003adbea788143a11d6`](https://github.com/numba/numba/commit/c708d5ae1fe0ee1124690003adbea788143a11d6) | Merge pull request #10804 from swap357/gha/upgrade_linux-64_manylinux_image | [c708d5ae1fe0.json](./data/c708d5ae1fe0ee1124690003adbea788143a11d6.json) |
 | [`a0028491585197a870dd645bc5fe0ec79fadc332`](https://github.com/numba/numba/commit/a0028491585197a870dd645bc5fe0ec79fadc332) | Merge pull request #10703 from eyupcanakman/feat/array-sort-kind | [a00284915851.json](./data/a0028491585197a870dd645bc5fe0ec79fadc332.json) |
 | [`aadd3722c1c204a20c1bcfc646c93fa37c57403a`](https://github.com/numba/numba/commit/aadd3722c1c204a20c1bcfc646c93fa37c57403a) | Merge pull request #10797 from esc/features/AGENTS.md | [aadd3722c1c2.json](./data/aadd3722c1c204a20c1bcfc646c93fa37c57403a.json) |
 | [`1979f73b936858cc3716864472b1fc63247da09a`](https://github.com/numba/numba/commit/1979f73b936858cc3716864472b1fc63247da09a) | Merge pull request #10732 from swap357/python-3.15 | [1979f73b9368.json](./data/1979f73b936858cc3716864472b1fc63247da09a.json) |
@@ -62,3 +64,4 @@ python scripts/results_readme.py
 | [`ea7ff35d02c925c3fc5005ea46dbc8fe3ca575ba`](https://github.com/numba/numba/commit/ea7ff35d02c925c3fc5005ea46dbc8fe3ca575ba) | Merge pull request #10806 from velochy/closure-vararg-inline | [ea7ff35d02c9.json](./data/ea7ff35d02c925c3fc5005ea46dbc8fe3ca575ba.json) |
 | [`9dc1df658a2804f60951b7985d9ed6f06dd8432a`](https://github.com/numba/numba/commit/9dc1df658a2804f60951b7985d9ed6f06dd8432a) | Merge pull request #10838 from Rudra-G-23/feat/10836-heapsort | [9dc1df658a28.json](./data/9dc1df658a2804f60951b7985d9ed6f06dd8432a.json) |
 | [`cdfb64df2388e1eedceb9e212e2843ea6edb263c`](https://github.com/numba/numba/commit/cdfb64df2388e1eedceb9e212e2843ea6edb263c) | Merge pull request #10973 from sebastianbreguel/fix/partition-negative-kth | [cdfb64df2388.json](./data/cdfb64df2388e1eedceb9e212e2843ea6edb263c.json) |
+| [`e69f15d25d7c87e1b3b1ba927f3740aa3ce98a5c`](https://github.com/numba/numba/commit/e69f15d25d7c87e1b3b1ba927f3740aa3ce98a5c) | Merge pull request #10623 from swap357/secure_gh_workflows | [e69f15d25d7c.json](./data/e69f15d25d7c87e1b3b1ba927f3740aa3ce98a5c.json) |
